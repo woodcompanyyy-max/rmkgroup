@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+    /* Color Palette from Reference */
+    --neon-blue: #00A3E1;
+    --deep-blue: #1035AC;
+    --neon-violet: #6A37FF;
+    --metal-bg: #1A1A1D;
+    --metal-text: #9396A1;
+    --white: #FFFFFF;
+    
+    /* Gradients */
+    --primary-gradient: linear-gradient(135deg, var(--neon-blue), var(--deep-blue), var(--neon-violet));
+    
+    /* Additional UI Colors */
+    --metal-panel: #242429;
+    --metal-border: #3A3A40;
+}
+
+body {
+    background-color: var(--metal-bg);
+    color: var(--metal-text);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--white);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Typography elements highlighting */
+.text-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.text-metal {
+    color: var(--metal-text) !important;
+}
+
+/* Custom Nav/Header */
+.navbar-custom {
+    background: rgba(26, 26, 29, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--metal-border);
+}
+
+.navbar-custom .nav-link {
+    color: var(--metal-text) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: var(--white) !important;
+    border-bottom: 2px solid var(--neon-blue);
+    text-shadow: 0 0 10px rgba(0, 163, 225, 0.5);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--white) !important;
+}
+
+/* Content Sections Visibility */
+.content-section {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Cards */
+.metal-card {
+    background: var(--metal-panel);
+    border: 1px solid var(--metal-border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.metal-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-violet);
+    box-shadow: 0 10px 30px rgba(106, 55, 255, 0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-neon {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--neon-blue);
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-neon::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--primary-gradient);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.btn-neon:hover {
+    color: var(--white);
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 163, 225, 0.4);
+}
+
+.btn-neon:hover::before {
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0 60px;
+    position: relative;
+}
+
+/* Reveal Animations */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.revealed {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.img-metal-frame {
+    border: 2px solid var(--metal-border);
+    border-radius: 20px;
+    padding: 10px;
+    background: var(--metal-panel);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+.img-metal-frame:hover {
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 30px rgba(0, 163, 225, 0.2);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--metal-border);
+    background: rgba(26, 26, 29, 0.95);
+    margin-top: auto;
+}
