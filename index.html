@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMK Group</title>
+    <title>RMK Group | Hunter Mode</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,15 +16,18 @@
 </head>
 <body>
 
+    <!-- Scanner Lines Overlay -->
+    <div class="scanner-lines"></div>
+
     <!-- Sticky Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand text-gradient" href="#">RMK Group</a>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand text-gradient" href="#">RMK <span style="font-weight: 300; opacity: 0.6;">GROUP</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars-staggered text-cyan"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-3">
+                <ul class="navbar-nav gap-lg-4">
                     <li class="nav-item">
                         <a class="nav-link active" data-target="principal">Principal</a>
                     </li>
@@ -32,7 +35,7 @@
                         <a class="nav-link" data-target="representacao">Representação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-target="assessoria">Assessoria & Treinamentos</a>
+                        <a class="nav-link" data-target="assessoria">Assessoria</a>
                     </li>
                 </ul>
             </div>
@@ -46,62 +49,102 @@
              ABA: PRINCIPAL
         =============================================== -->
         <section id="principal" class="content-section active">
-            <!-- Hero / Logo Intro -->
+            <!-- Hero Section -->
             <div class="hero-section text-center">
                 <div class="container">
-                    <h1 class="display-3 fw-bold mb-3">Bem-vindo à <span class="text-gradient">RMK Group</span></h1>
-                    <p class="lead text-metal mb-5 max-w-75 mx-auto">Excelência comercial e representação estratégica para alavancar seus resultados.</p>
+                    <div class="reveal-up">
+                        <span class="small text-cyan fw-bold mb-2 d-block tracking-widest" style="letter-spacing: 5px;">ESTRATÉGIA DE ALTA INTENSIDADE</span>
+                        <h1 class="display-2 fw-bold mb-3">RMK <span class="text-gradient">GROUP</span></h1>
+                        <p class="lead text-metal mb-5 max-w-75 mx-auto opacity-75">Domine o mercado com representação estratégica e consultoria de elite. <br>Onde outros veem barreiras, nós vemos alvos.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Seção: Sobre Mim -->
-            <div class="container mb-5 py-5 reveal-up">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 reveal-left">
-                        <div class="metal-card">
-                            <h2 class="h1 mb-4">Sobre <span class="text-gradient">Mim</span></h2>
-                            <p class="text-metal lead">Focado em transformar desafios comerciais em oportunidades de crescimento exponencial.</p>
-                            <p class="text-metal">Com anos de experiência na linha de frente da representação, desenvolvi um método que integra inteligência emocional e técnica de negociação agressiva. Meu compromisso é exceder as metas, garantindo que sua marca seja líder no nicho onde atua.</p>
-                            <p class="text-metal">Minha trajetória é pautada pela ética e pela construção de conexões de longo prazo entre marcas e compradores estratégicos.</p>
+            <!-- Seção: Sobre Mim (RE-DESIGNED) -->
+            <div class="section-about container-fluid px-lg-5">
+                <div class="about-bg-text">TARGET_01</div>
+                
+                <div class="container">
+                    <div class="about-content-wrapper row reveal-up">
+                        
+                        <!-- Text Card (Overlapping) -->
+                        <div class="col-lg-6 about-text-card">
+                            <div class="metal-card h-100">
+                                <span class="text-cyan small fw-bold mb-3 d-block">PROFILER // OPERATIVE</span>
+                                <h2 class="h1 mb-4">Sobre <span class="text-gradient">Mim</span></h2>
+                                <p class="text-white lead mb-4">Focado em transformar desafios comerciais em oportunidades de crescimento exponencial.</p>
+                                <p class="mb-3 opacity-75">Com anos de experiência na linha de frente no comercio de A&B, desenvolvi um método que integra inteligência e técnica de negociação agressiva. Meu compromisso é exceder as metas, garantindo que sua marca seja líder no nicho onde atua.</p>
+                                <p class="mb-5 opacity-75">Minha trajetória é pautada pela ética e pela construção de conexões de longo prazo entre marcas e compradores estratégicos.</p>
+                                
+                                <!-- Tech Bars Replace Metrics -->
+                                <div class="tech-bar-container">
+                                    <div class="tech-bar-label">
+                                        <span>PERFORMANCE_CORE</span>
+                                        <span>98%</span>
+                                    </div>
+                                    <div class="tech-bar-bg">
+                                        <div class="tech-bar-fill" style="--fill-width: 98%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="tech-bar-container">
+                                    <div class="tech-bar-label">
+                                        <span>NETWORK_SYNC</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="tech-bar-bg">
+                                        <div class="tech-bar-fill" style="--fill-width: 95%;"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 reveal-right">
-                        <div class="img-metal-frame">
-                            <img src="assets/about_me.png" alt="Sobre Mim - RMK Group" class="img-fluid rounded-4">
+
+                        <!-- Image HUD Container -->
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="image-hud-container">
+                                <!-- HUD Elements -->
+                                <div class="corner-bracket cb-tl"></div>
+                                <div class="corner-bracket cb-tr"></div>
+                                <div class="corner-bracket cb-bl"></div>
+                                <div class="corner-bracket cb-br"></div>
+                                <div class="hud-coords coords-tl">LAT: 23.5505 S</div>
+                                <div class="hud-coords coords-br">LON: 46.6333 W</div>
+                                
+                                <div class="img-metal-frame">
+                                    <img src="assets/lucca.jpeg" alt="Sobre Mim - RMK Group" class="img-fluid w-100">
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- Seção: Sobre a Empresa -->
-            <div class="container mb-5 py-5 border-top border-secondary reveal-up" style="border-color: var(--metal-border) !important;">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-10">
-                        <h2 class="h1 mb-5">Sobre a <span class="text-gradient">Empresa</span></h2>
+            <div class="container mb-5 py-5 reveal-up">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
                         <div class="metal-card">
                             <div class="row g-4 align-items-center">
-                                <div class="col-md-7 text-start">
-                                    <p class="text-metal lead">A RMK Group é o braço tático necessário para sua expansão comercial.</p>
-                                    <p class="text-metal">Nascida da necessidade de um atendimento exclusivo, a RMK Group não entrega apenas números, entrega parcerias sustentáveis. Atuamos com uma curadoria rigorosa de canais de venda, garantindo que seu produto esteja nos lugares certos, para as pessoas certas.</p>
-                                    <div class="mt-4">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <div class="btn-neon p-2 d-flex align-items-center justify-content-center rounded-circle me-3" style="width:40px; height:40px; padding:0 !important">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                            <span class="text-white fw-bold">Atendimento VIP e Exclusivo</span>
-                                        </div>
-                                        <div class="d-flex align-items-center mb-3">
-                                            <div class="btn-neon p-2 d-flex align-items-center justify-content-center rounded-circle me-3" style="width:40px; height:40px; padding:0 !important">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                            <span class="text-white fw-bold">Estratégias de Penetração de Mercado</span>
-                                        </div>
-                                    </div>
+                                <div class="col-md-7">
+                                    <span class="text-cyan small fw-bold mb-3 d-block">OPERATION // TACTICAL</span>
+                                    <h2 class="h1 mb-4">A <span class="text-gradient">Empresa</span></h2>
+                                    <p class="lead mb-4">A RMK Group é o braço tático necessário para sua expansão comercial.</p>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3 d-flex align-items-center">
+                                            <i class="fa-solid fa-caret-right text-cyan me-3"></i>
+                                            <span>Curadoria rigorosa de canais de venda estratégicos.</span>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-center">
+                                            <i class="fa-solid fa-caret-right text-cyan me-3"></i>
+                                            <span>Abordagem focada em ROI e parcerias de longo prazo.</span>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="col-md-5">
-                                    <div class="p-4 bg-dark rounded-4" style="background: rgba(0,0,0,0.3) !important; border: 1px solid var(--metal-border)">
-                                        <h4 class="text-gradient mb-4">Diferenciais</h4>
-                                        <p class="small text-metal">Consultoria completa do Sell-in ao Sell-out, visando o giro constante do seu produto no PDV.</p>
+                                    <div class="p-4 rounded-1" style="background: rgba(0, 247, 255, 0.05); border: 1px dashed var(--hunter-cyan);">
+                                        <h4 class="h5 mb-3">Diferencial</h4>
+                                        <p class="small opacity-75">Consultoria completa do Sell-in ao Sell-out. Não apenas vendemos, dominamos o ponto de venda.</p>
                                     </div>
                                 </div>
                             </div>
@@ -111,41 +154,38 @@
             </div>
 
             <!-- Missão, Objetivo e Valores -->
-            <div class="container pb-5 pt-5 mt-5 border-top border-secondary reveal-up" style="border-color: var(--metal-border) !important;">
-                <div class="row g-4 text-center">
+            <div class="container pb-5 pt-5 mt-5">
+                <div class="row g-4">
                     <!-- Missão -->
-                    <div class="col-md-4">
-                        <div class="metal-card">
+                    <div class="col-md-4 reveal-up" style="transition-delay: 0.1s;">
+                        <div class="metal-card text-center">
                             <i class="fa-solid fa-bullseye card-icon"></i>
                             <h3 class="h4">Missão</h3>
-                            <p class="text-metal mt-3">Conectar demandas a soluções com excelência operacional, maximizando os resultados através de parcerias sólidas.</p>
+                            <p class="small opacity-75 mt-3">Maximizar resultados através de inteligência comercial e parcerias indestrutíveis.</p>
                         </div>
                     </div>
                     <!-- Objetivo -->
-                    <div class="col-md-4">
-                        <div class="metal-card">
-                            <i class="fa-solid fa-rocket card-icon"></i>
+                    <div class="col-md-4 reveal-up" style="transition-delay: 0.2s;">
+                        <div class="metal-card text-center">
+                            <i class="fa-solid fa-bolt card-icon"></i>
                             <h3 class="h4">Objetivo</h3>
-                            <p class="text-metal mt-3">Ser a principal referência em representação comercial no nosso nicho de atuação até 2026, expandindo horizontes.</p>
+                            <p class="small opacity-75 mt-3">Dominar o setor como referência absoluta em representação comercial até 2030.</p>
                         </div>
                     </div>
                     <!-- Valores -->
-                    <div class="col-md-4">
-                        <div class="metal-card">
-                            <i class="fa-solid fa-gem card-icon"></i>
+                    <div class="col-md-4 reveal-up" style="transition-delay: 0.3s;">
+                        <div class="metal-card text-center">
+                            <i class="fa-solid fa-shield-halved card-icon"></i>
                             <h3 class="h4">Valores</h3>
-                            <p class="text-metal mt-3">Transparência comercial, dedicação absoluta, inovação constante e integridade em todas as negociações.</p>
+                            <p class="small opacity-75 mt-3">Transparência letal, dedicação absoluta e inovação constante em cada negociação.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Botão CTA para Assessoria -->
-                <div class="row mt-5 pt-4 justify-content-center reveal-up">
-                    <div class="col-auto">
-                        <button class="btn btn-neon px-5 py-3 fs-5" onclick="document.querySelector('[data-target=\'assessoria\']').click()">
-                            Assessoria & Treinamentos <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </button>
-                    </div>
+                <div class="text-center mt-5 pt-5 reveal-up">
+                    <button class="btn btn-neon" onclick="document.querySelector('[data-target=\'assessoria\']').click()">
+                        INICIAR CONSULTORIA_
+                    </button>
                 </div>
             </div>
         </section>
@@ -154,41 +194,65 @@
              ABA: REPRESENTAÇÃO
         =============================================== -->
         <section id="representacao" class="content-section">
-            <div class="hero-section text-center pt-5">
+            <div class="hero-section text-center">
                 <div class="container">
-                    <h2 class="display-5 fw-bold"><span class="text-gradient">Representação</span> Comercial</h2>
-                    <p class="text-metal mt-3">Conheça minha trajetória e o ecossistema de clientes que atendo.</p>
+                    <h2 class="display-5 fw-bold"><span class="text-gradient">DOMÍNIO</span> DE MERCADO</h2>
+                    <p class="opacity-75 mt-3">Conheça o ecossistema de clientes e nossa trajetória de impacto.</p>
                 </div>
             </div>
 
             <div class="container pb-5">
-                <div class="row g-4 pt-4">
-                    <!-- Experiência Comercial -->
-                    <div class="col-lg-12">
-                        <div class="metal-card text-center text-lg-start">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-12 reveal-up">
+                        <div class="metal-card">
                             <div class="row align-items-center">
-                                <div class="col-lg-8">
-                                    <h3 class="h4 text-white">Experiência Comercial</h3>
-                                    <p class="text-metal mt-3 mb-0">Com mais de X anos de mercado, atuo ativamente na expansão de portfólios, garantindo que o produto certo chegue no ponto de venda com visibilidade e aderência. Foco no acompanhamento total, do pedido à entrega.</p>
+                                <div class="col-md-8">
+                                    <span class="text-cyan small fw-bold mb-3 d-block">MARKET // PENETRATION</span>
+                                    <h3 class="h4 text-gradient mb-4">Experiência Comercial</h3>
+                                    <p class="mb-0 opacity-75">Atuamos ativamente na expansão de portfólios, garantindo que o produto certo chegue no ponto de venda com visibilidade e aderência total. Monitoramento full-stack: do pedido à entrega final.</p>
                                 </div>
-                                <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                                    <i class="fa-solid fa-briefcase card-icon" style="font-size: 4rem;"></i>
+                                <div class="col-md-4 text-center mt-4 mt-md-0 position-relative">
+                                    <div class="corner-bracket cb-tl" style="width: 15px; height: 15px;"></div>
+                                    <div class="corner-bracket cb-br" style="width: 15px; height: 15px;"></div>
+                                    <div class="display-3 fw-bold text-gradient">5+</div>
+                                    <span class="small tracking-widest text-cyan">ANOS NO MERCADO DE A&B</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Clientes & Nicho -->
-                    <div class="col-lg-6">
-                        <div class="metal-card">
-                            <h3 class="h4 text-white"><i class="fa-solid fa-users text-white me-2"></i> Clientes</h3>
-                            <p class="text-metal mt-3">Uma rede de networking consolidada com os maiores players logísticos e redes varejistas da região. Mantemos SLA altíssimo e reposição eficiente.</p>
+                    
+                    <!-- Performance Metrics Grid -->
+                    <div class="col-md-4 reveal-up" style="transition-delay: 0.1s;">
+                        <div class="metal-card text-center d-flex flex-column justify-content-center h-100">
+                            <div class="display-4 fw-bold text-cyan mb-2">300%</div>
+                            <span class="small tracking-widest opacity-75">CRESCIMENTO DE CARTEIRA</span>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-4 reveal-up" style="transition-delay: 0.2s;">
+                        <div class="metal-card text-center d-flex flex-column justify-content-center h-100">
+                            <div class="display-4 fw-bold text-cyan mb-2">50+</div>
+                            <span class="small tracking-widest opacity-75">GRANDES CONTAS ATIVAS</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 reveal-up" style="transition-delay: 0.3s;">
+                        <div class="metal-card text-center d-flex flex-column justify-content-center h-100">
+                            <div class="display-4 fw-bold text-cyan mb-2">1M+</div>
+                            <span class="small tracking-widest opacity-75">VOLUMETRIA MENSAL (BRL)</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 reveal-up" style="transition-delay: 0.4s;">
                         <div class="metal-card">
-                            <h3 class="h4 text-white"><i class="fa-solid fa-chart-pie text-white me-2"></i> Nicho Atendido</h3>
-                            <p class="text-metal mt-3">Especialização profunda no mercado B2B, grandes contas e atacado. Entendemos as métricas que realmente importam para o comprador.</p>
+                            <span class="text-cyan small fw-bold mb-2 d-block">NODE // 01</span>
+                            <h3 class="h4 mb-3">CLIENTES</h3>
+                            <p class="small opacity-75">Uma rede de networking consolidada com os maiores players logísticos e redes varejistas em todo o Brasil.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 reveal-up" style="transition-delay: 0.5s;">
+                        <div class="metal-card">
+                            <span class="text-cyan small fw-bold mb-2 d-block">NODE // 02</span>
+                            <h3 class="h4 mb-3">NICHO ALVO</h3>
+                            <p class="small opacity-75">Especialização profunda no mercado B2B, grandes contas e atacado. Entregamos as métricas reais que o comprador supermercadista exige.</p>
                         </div>
                     </div>
                 </div>
@@ -196,32 +260,86 @@
         </section>
 
         <!-- ==============================================
-             ABA: ASSESSORIA E TREINAMENTOS
+             ABA: ASSESSORIA
         =============================================== -->
         <section id="assessoria" class="content-section">
-            <div class="hero-section text-center pt-5">
+            <div class="hero-section text-center">
                 <div class="container">
-                    <h2 class="display-5 fw-bold">Assessoria & <span class="text-gradient">Treinamentos</span></h2>
-                    <p class="text-metal mt-3">Elevando as competências da sua equipe de vendas e reestruturando processos.</p>
+                    <h2 class="display-5 fw-bold">TREINAMENTO <span class="text-gradient">DE ELITE</span></h2>
+                    <p class="opacity-75 mt-3">Elevando o nível da sua equipe e reestruturando processos comerciais.</p>
                 </div>
             </div>
 
-            <div class="container pb-5 pt-4">
-                <div class="row g-5">
+            <div class="container pb-5">
+                <div class="row g-4">
                     <div class="col-md-6">
-                        <div class="metal-card h-100 d-flex flex-column justify-content-center text-center">
-                            <i class="fa-solid fa-user-tie card-icon"></i>
-                            <h3 class="h4 mt-3">Consultoria de Vendas</h3>
-                            <p class="text-metal mt-3 mb-4">Avaliação completa do seu funil de vendas, script de abordagem e taxa de conversão. Entregamos um plano de ação claro para aumentar faturamento.</p>
-                            <button class="btn btn-neon mt-auto mx-auto w-50">Saber Mais</button>
+                        <div class="metal-card d-flex flex-column h-100">
+                            <h3 class="h4 text-cyan mb-4">Consultoria de Vendas</h3>
+                            <p class="opacity-75 mb-5 flex-grow-1">Avaliação 360º do seu funil e taxas de conversão. Plano de ação imediato orientado a faturamento real.</p>
+                            <button class="btn btn-neon w-100">SOLICITAR BRIEFING_</button>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="metal-card h-100 d-flex flex-column justify-content-center text-center">
-                            <i class="fa-solid fa-person-chalkboard card-icon"></i>
-                            <h3 class="h4 mt-3">Treinamentos e Palestras</h3>
-                            <p class="text-metal mt-3 mb-4">Capacite seu time com técnicas de PNL aplicadas a vendas, fechamento agressivo e táticas de retenção de clientes. Perfeito para convenções.</p>
-                            <button class="btn btn-neon mt-auto mx-auto w-50">Saber Mais</button>
+                        <div class="metal-card d-flex flex-column h-100">
+                            <h3 class="h4 text-cyan mb-4">Palestras e Treinamento</h3>
+                            <p class="opacity-75 mb-5 flex-grow-1">Capacite seu time com técnicas de PNL aplicadas a vendas, negociação, comunicação e táticas de retenção de clientes. Perfeito para convenções.</p>
+                            <button class="btn btn-neon w-100">AGENDAR SESSÃO_</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SEÇÃO GLOBAL: CONTATO
+        =============================================== -->
+        <section class="global-contact mt-5 pt-5 pb-5 position-relative">
+            <!-- Background glow effect -->
+            <div class="position-absolute top-50 start-50 translate-middle w-100 h-100" style="background: radial-gradient(circle, rgba(0, 247, 255, 0.03) 0%, transparent 60%); z-index: -1;"></div>
+            
+            <div class="container reveal-up">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="metal-card">
+                            <div class="text-center mb-5">
+                                <span class="text-cyan small fw-bold mb-2 d-block tracking-widest">COMUNICAÇÃO // SECURE CHANNEL</span>
+                                <h2 class="h1">INICIAR <span class="text-gradient">OPERAÇÃO</span></h2>
+                                <p class="opacity-75 small mt-2">Preencha os dados da sua empresa. Retorno garantido em até 24h.</p>
+                            </div>
+                            
+                            <form class="hunter-form">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group position-relative">
+                                            <input type="text" class="hunter-input" placeholder="NOME DO OPERADOR" required>
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group position-relative">
+                                            <input type="email" class="hunter-input" placeholder="EMAIL CORPORATIVO" required>
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group position-relative">
+                                            <input type="text" class="hunter-input" placeholder="EMPRESA / CNPJ" required>
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group position-relative">
+                                            <textarea class="hunter-input" rows="4" placeholder="COORDENADAS DO PROJETO (Descreva sua necessidade)" required></textarea>
+                                            <div class="input-glow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-5">
+                                        <button type="submit" class="btn btn-neon w-100" style="max-width: 300px;">
+                                            ENVIAR TRANSMISSÃO_
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -231,10 +349,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-4 text-center">
+    <footer class="text-center">
         <div class="container">
-            <h4 class="text-white mb-3">RMK <span class="text-metal fw-normal">GROUP</span></h4>
-            <p class="text-metal small mb-0">© 2026 RMK Group. Todos os direitos reservados.</p>
+            <h4 class="mb-4">RMK <span class="text-gradient">GROUP</span></h4>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#" class="text-cyan"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="text-cyan"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-cyan"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="small opacity-50 mb-0">© 2026 RMK GROUP // OPERAÇÃO COMERCIAL DE ALTA INTENSIDADE.</p>
         </div>
     </footer>
 

@@ -1,0 +1,20 @@
+{
+  "name": "lucca",
+  "version": "1.0.0",
+  "description": "Este é o site institucional da **RMK Group**, desenvolvido com foco em excelência comercial, representação estratégica e treinamentos de vendas.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianWS01/RMKGROUP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianWS01/RMKGROUP/issues"
+  },
+  "homepage": "https://github.com/BrianWS01/RMKGROUP#readme"
+}
