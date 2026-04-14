@@ -37,6 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link" data-target="assessoria">Assessoria</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="marketing">Marketing e Mídia</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -230,29 +233,32 @@
                     </div>
                     <div class="col-md-4 reveal-up" style="transition-delay: 0.2s;">
                         <div class="metal-card text-center d-flex flex-column justify-content-center h-100">
-                            <div class="display-4 fw-bold text-cyan mb-2">50+</div>
+                            <div class="display-4 fw-bold text-cyan mb-2">30+</div>
                             <span class="small tracking-widest opacity-75">GRANDES CONTAS ATIVAS</span>
                         </div>
                     </div>
                     <div class="col-md-4 reveal-up" style="transition-delay: 0.3s;">
                         <div class="metal-card text-center d-flex flex-column justify-content-center h-100">
-                            <div class="display-4 fw-bold text-cyan mb-2">1M+</div>
+                            <div class="display-4 fw-bold text-cyan mb-2">800k+</div>
                             <span class="small tracking-widest opacity-75">VOLUMETRIA MENSAL (BRL)</span>
                         </div>
                     </div>
 
                     <div class="col-lg-6 reveal-up" style="transition-delay: 0.4s;">
-                        <div class="metal-card">
+                        <div class="metal-card h-100 d-flex flex-column">
                             <span class="text-cyan small fw-bold mb-2 d-block">NODE // 01</span>
                             <h3 class="h4 mb-3">CLIENTES</h3>
-                            <p class="small opacity-75">Uma rede de networking consolidada com os maiores players logísticos e redes varejistas em todo o Brasil.</p>
+                            <p class="small opacity-75 flex-grow-1">Uma rede de networking consolidada com os maiores players logísticos e redes varejistas em todo o Brasil.</p>
+                            <div class="mt-3">
+                                <button class="btn btn-neon w-100" style="padding: 1rem;" data-bs-toggle="modal" data-bs-target="#clientesModal">VER PORTFÓLIO_</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 reveal-up" style="transition-delay: 0.5s;">
-                        <div class="metal-card">
+                        <div class="metal-card h-100 d-flex flex-column">
                             <span class="text-cyan small fw-bold mb-2 d-block">NODE // 02</span>
                             <h3 class="h4 mb-3">NICHO ALVO</h3>
-                            <p class="small opacity-75">Especialização profunda no mercado B2B, grandes contas e atacado. Entregamos as métricas reais que o comprador supermercadista exige.</p>
+                            <p class="small opacity-75 flex-grow-1">Especialização profunda no mercado B2B, grandes contas e atacado. Entregamos as métricas reais que o comprador supermercadista exige.</p>
                         </div>
                     </div>
                 </div>
@@ -284,6 +290,49 @@
                             <h3 class="h4 text-cyan mb-4">Palestras e Treinamento</h3>
                             <p class="opacity-75 mb-5 flex-grow-1">Capacite seu time com técnicas de PNL aplicadas a vendas, negociação, comunicação e táticas de retenção de clientes. Perfeito para convenções.</p>
                             <button class="btn btn-neon w-100">AGENDAR SESSÃO_</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             ABA: MARKETING E MÍDIA
+        =============================================== -->
+        <section id="marketing" class="content-section">
+            <div class="hero-section text-center">
+                <div class="container">
+                    <h2 class="display-5 fw-bold">MARKETING <span class="text-gradient">E MÍDIA</span></h2>
+                    <p class="opacity-75 mt-3">Curadoria especializada de redes sociais e marketing de empresas.</p>
+                </div>
+            </div>
+
+            <div class="container pb-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="metal-card">
+                            <span class="text-cyan small fw-bold mb-3 d-block">CREATIVE // STUDIO</span>
+                            <h3 class="h4 mb-4">Estratégia Digital Completa</h3>
+                            <p class="lead opacity-75 mb-4">Nossa equipe realiza a curadoria de redes sociais (LinkedIn, Instagram, TikTok, etc.) e cuida do marketing integral da sua empresa.</p>
+                            
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-paintbrush text-cyan me-3"></i>
+                                    <span>Criação de artes institucionais e publicitárias criativas.</span>
+                                </li>
+                                <li class="mb-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-calendar-check text-cyan me-3"></i>
+                                    <span>Desenvolvimento de cronograma prático de postagens.</span>
+                                </li>
+                                <li class="mb-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-video text-cyan me-3"></i>
+                                    <span>Roteiro e gravação de vídeos dinâmicos e altamente engajáveis.</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-5 text-center">
+                                <button class="btn btn-neon" onclick="document.querySelector('.hunter-input').focus()">INICIAR PROJETO_</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -360,6 +409,25 @@
             <p class="small opacity-50 mb-0">© 2026 RMK GROUP // OPERAÇÃO COMERCIAL DE ALTA INTENSIDADE.</p>
         </div>
     </footer>
+
+    <!-- Modal de Clientes -->
+    <div class="modal fade" id="clientesModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: var(--hunter-darker); border: 1px solid var(--hunter-cyan); box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title font-syncopate text-gradient fw-bold" style="font-family: 'Syncopate', sans-serif;">PORTFÓLIO DE CLIENTES</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <div class="p-5 my-3" style="border: 1px dashed rgba(0, 247, 255, 0.3); border-radius: 4px; background: rgba(0, 247, 255, 0.02);">
+                        <i class="fa-solid fa-image text-cyan mb-3" style="font-size: 3rem; opacity: 0.5;"></i>
+                        <h4 class="h5 mb-2">[ ARTE DOS CLIENTES AQUI ]</h4>
+                        <p class="small opacity-50 mb-0">Insira a imagem com a logo de seus grandes clientes neste espaço em atualizações futuras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS (With Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
