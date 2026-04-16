@@ -309,7 +309,7 @@
                             <h3 class="h4 text-cyan mb-4">Consultoria de Vendas</h3>
                             <p class="opacity-75 mb-5 flex-grow-1">Avaliação 360º do seu funil e taxas de conversão.
                                 Plano de ação imediato orientado a faturamento real.</p>
-                            <button class="btn btn-neon w-100">SOLICITAR BRIEFING_</button>
+                            <button class="btn btn-neon w-100" onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' }); setTimeout(() => document.querySelector('.hunter-input').focus(), 800)">SOLICITAR BRIEFING_</button>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -318,7 +318,7 @@
                             <p class="opacity-75 mb-5 flex-grow-1">Capacite seu time com técnicas de PNL aplicadas a
                                 vendas, negociação, comunicação e táticas de retenção de clientes. Perfeito para
                                 convenções.</p>
-                            <button class="btn btn-neon w-100">AGENDAR SESSÃO_</button>
+                            <button class="btn btn-neon w-100" onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' }); setTimeout(() => document.querySelector('.hunter-input').focus(), 800)">AGENDAR SESSÃO_</button>
                         </div>
                     </div>
                 </div>
@@ -373,7 +373,7 @@
         <!-- ==============================================
              SEÇÃO GLOBAL: CONTATO
         =============================================== -->
-        <section class="global-contact mt-5 pt-5 pb-5 position-relative">
+        <section id="contato" class="global-contact mt-5 pt-5 pb-5 position-relative">
             <!-- Background glow effect -->
             <div class="position-absolute top-50 start-50 translate-middle w-100 h-100"
                 style="background: radial-gradient(circle, rgba(0, 247, 255, 0.03) 0%, transparent 60%); z-index: -1;">
