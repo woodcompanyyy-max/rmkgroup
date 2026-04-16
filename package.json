@@ -4,6 +4,7 @@
   "description": "Este é o site institucional da **RMK Group**, desenvolvido com foco em excelência comercial, representação estratégica e treinamentos de vendas.",
   "main": "script.js",
   "scripts": {
+    "dev": "serve .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -467,3 +467,27 @@ footer {
     width: 100%;
 }
 
+/* Portfolio Modal Styles */
+.portfolio-container {
+    position: relative;
+    border: 1px solid rgba(0, 247, 255, 0.1);
+    background: rgba(0, 247, 255, 0.02);
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.portfolio-img {
+    filter: contrast(1.1) brightness(0.9);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.portfolio-container:hover {
+    border-color: var(--hunter-cyan);
+    box-shadow: 0 0 30px rgba(0, 247, 255, 0.15);
+}
+
+.portfolio-container:hover .portfolio-img {
+    filter: contrast(1.2) brightness(1.1);
+    transform: scale(1.02);
+}
+
